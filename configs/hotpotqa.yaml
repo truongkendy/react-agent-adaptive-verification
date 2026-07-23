@@ -1,0 +1,6 @@
+data: data/hotpotqa/hotpot_dev_fullwiki.json
+benchmark: hotpotqa
+n_baseline: 500       
+n_dev: 50             
+seed: 42
+max_steps: 8

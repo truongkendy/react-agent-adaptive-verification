@@ -1,0 +1,9 @@
+defaults:
+  backend: ollama
+  model: llama3.1
+  max_steps: 8
+  seed: 42
+  n: 50
+  sleep: 0.0
+  layer1: false
+  out: results/logs/baseline.json

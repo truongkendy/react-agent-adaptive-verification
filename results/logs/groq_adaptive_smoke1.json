@@ -1,0 +1,24 @@
+[
+  {
+    "id": "5ae143ed55429920d5234360",
+    "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+    "gold": "1755",
+    "prediction": null,
+    "em": 0,
+    "n_steps": 6,
+    "n_react_calls": 7,
+    "n_verify_calls": 3,
+    "n_llm_calls": 10,
+    "n_revisions": 0,
+    "finished": false,
+    "prompt_tokens": 14574,
+    "completion_tokens": 407,
+    "layer_runs": {
+      "1": 6,
+      "2": 2,
+      "4": 1
+    },
+    "verify_est_tokens": 1158,
+    "trajectory": "Thought 1: Thought 2: I need to search Sergei Aleksandrovich Tokarev, find the university he was a professor at, then find the year it was founded.\nAction 1: Thought 2: The question simplifies to find the university where Sergei Aleksandrovich Tokarev was a professor. I only need to search Sergei Aleksandrovich Tokarev and find the university.\nObservation 1: Invalid action. Use Search[...], Lookup[...] or Finish[...].\nThought 2: I need to search Sergei Aleksandrovich Tokarev and find the university he was a professor at.\nAction 2: Search[Sergei Aleksandrovich Tokarev]\nObservation 2: Sergei Aleksandrovich Tokarev (Russian: Серге́й Алекса́ндрович То́карев; 29 December 1899 – 19 April 1985) was a Russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at Moscow State University.\nThought 3: I need to search Moscow State University and find the year it was founded.\nAction 3: Search[Moscow State University]\nObservation 3: Moscow State University (MSU), officially M. V. Lomonosov Moscow State University, is a public research university in Moscow, Russia. The university includes 15 research institutes, 43 faculties, more than 300 departments, and six branches. Alumni of the university include past leaders of the Soviet Union and other governments.\nThought 4: I need to find the year Moscow State University was founded.\nAction 4: Search[Moscow State University]\nObservation 4: Moscow State University (MSU), officially M. V. Lomonosov Moscow State University, is a public research university in Moscow, Russia. The university includes 15 research institutes, 43 faculties, more than 300 departments, and six branches. Alumni of the university include past leaders of the Soviet Union and other governments.\nThought 5: I need to instead search Lomonosov Moscow State University and find the year it was founded.\nAction 5: Search[Lomonosov Moscow State University]\nObservation 5: Moscow State University (MSU), officially M. V. Lomonosov Moscow State University, is a public research university in Moscow, Russia. The university includes 15 research institutes, 43 faculties, more than 300 departments, and six branches. Alumni of the university include past leaders of the Soviet Union and other governments.\nThought 6: I need to look up \"founded\" to find the year Lomonosov Moscow State University was founded.\nAction 6: Lookup[founded]\nObservation 6: No more results for 'founded'."
+  }
+]

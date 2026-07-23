@@ -1,0 +1,20 @@
+{
+  "experiment": "adaptive",
+  "tag": "adaptive[L1+L2+L3+L4]",
+  "backend": "openai",
+  "model": "llama-3.3-70b-versatile",
+  "base_url": "https://api.groq.com/openai/v1",
+  "data": "data/hotpot_dev_fullwiki.json",
+  "n_requested": 5,
+  "n_scored": 5,
+  "seed": 42,
+  "max_steps": 8,
+  "budget": 5000,
+  "revise_bias": 1.0,
+  "use_layer3": true,
+  "use_layer4": true,
+  "exact_match": 0.4,
+  "n_em": 2,
+  "elapsed_s": 325.3,
+  "note": "Backfilled by hand: meta writing was added to exp_adaptive.py after this run. Model choice was not recorded in the older logs, so this run is NOT comparable to baseline_n5.json / adaptive_n5.json."
+}

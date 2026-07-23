@@ -1,0 +1,129 @@
+{
+  "baseline": {
+    "path": "results/logs/baseline_n60_distractor_qwen32b.json",
+    "meta": {
+      "experiment": "baseline",
+      "tag": "baseline",
+      "backend": "ollama",
+      "model": "qwen2.5:32b",
+      "base_url": "",
+      "data": "data/hotpotqa/hotpot_dev_distractor.json",
+      "n_requested": 60,
+      "n_scored": 60,
+      "seed": 42,
+      "max_steps": 8,
+      "layer1": false,
+      "retrieval": "distractor",
+      "exact_match": 0.4666666666666667,
+      "n_em": 28,
+      "mean_f1": 0.5726190476190476,
+      "layer1_violations": 0,
+      "elapsed_s": 2866.2
+    },
+    "totals": {
+      "n": 60,
+      "em": 28,
+      "unfinished": 18,
+      "steps": 287,
+      "llm_calls": 287,
+      "react_calls": 287,
+      "verify_calls": 0,
+      "revisions": 0,
+      "tokens": 574229,
+      "verify_est_tokens": 0,
+      "layer_runs": {}
+    }
+  },
+  "adaptive": {
+    "path": "results/logs/adaptive_n60_distractor_qwen32b.json",
+    "meta": {
+      "experiment": "adaptive",
+      "tag": "adaptive[L1+L2+L3+L4+L5]",
+      "backend": "ollama",
+      "model": "qwen2.5:32b",
+      "base_url": "",
+      "data": "data/hotpotqa/hotpot_dev_distractor.json",
+      "n_requested": 60,
+      "n_scored": 60,
+      "seed": 42,
+      "max_steps": 8,
+      "budget": 5000,
+      "retrieval": "distractor",
+      "revise_bias": 1.0,
+      "use_layer3": true,
+      "use_layer4": true,
+      "use_layer5": true,
+      "exact_match": 0.4166666666666667,
+      "n_em": 25,
+      "mean_f1": 0.4881746031746032,
+      "elapsed_s": 5868.7,
+      "router": "AdaptiveThresholdRouter",
+      "cost_model": "DeclaredCostModel(error_weights={'base': 1.0, 'irreversibility': 2.0, 'stakes': 2.0, 'earliness': 1.0, 'scarcity': 1.0}, layer_costs={1: 0.0, 2: 120.0, 3: 300.0, 4: 800.0, 5: 400.0}, efficacy={1: 0.3, 2: 0.3, 3: 0.55, 4: 0.6, 5: 0.7}, revision_cost=1.0, revise_efficacy=0.5, revision_repeat_penalty=1.0)",
+      "calibrator": "LayeredCalibrator({1: IdentityCalibrator(), 2: IdentityCalibrator(), 3: TemperatureScaling(T=1), 4: TemperatureScaling(T=1)})",
+      "calibration_config": null,
+      "cost_model_config": null,
+      "identity_calibration": true,
+      "routing_warnings": []
+    },
+    "totals": {
+      "n": 60,
+      "em": 25,
+      "unfinished": 26,
+      "steps": 336,
+      "llm_calls": 618,
+      "react_calls": 336,
+      "verify_calls": 282,
+      "revisions": 52,
+      "tokens": 826825,
+      "verify_est_tokens": 136906,
+      "layer_runs": {
+        "1": 336,
+        "2": 186,
+        "5": 49,
+        "3": 66,
+        "4": 49
+      }
+    },
+    "traces": {
+      "n_decisions": 740,
+      "actions": {
+        "stop_pass": 311,
+        "call_layer_3": 328,
+        "stop_fail_revise": 52,
+        "call_layer_4": 49
+      },
+      "mean_tau": 0.9389797149367848,
+      "mean_tau_accept": 0.6139866584089559,
+      "mean_conf": 0.7395504909206081,
+      "mean_raw_conf": 0.7395504909206081,
+      "knife_edge": 198,
+      "max_calibration_shift": 1.1102230246251565e-16
+    }
+  },
+  "paired": {
+    "n": 60,
+    "wins": [],
+    "losses": [
+      "5ac35a7e554299741d48a257",
+      "5ab6087a554299110f2199be",
+      "5a7bb7f2554299042af8f7b6"
+    ],
+    "em_delta": -3,
+    "sign_test_p": 0.25,
+    "f1_baseline": 0.5726190476190476,
+    "f1_adaptive": 0.4881746031746032,
+    "f1_wins": [],
+    "f1_losses": [
+      "5a8d12ca5542994ba4e3dbe2",
+      "5ac3d9135542995c82c4ac4c",
+      "5ac35a7e554299741d48a257",
+      "5ade25ed5542997c77aded70",
+      "5ae788fa55429952e35ea964",
+      "5ab6087a554299110f2199be",
+      "5a7bb7f2554299042af8f7b6"
+    ],
+    "f1_sign_test_p": 0.015625
+  },
+  "pairing_problems": [],
+  "verdict": "no significant EM difference"
+}

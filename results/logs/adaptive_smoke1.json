@@ -1,0 +1,23 @@
+[
+  {
+    "id": "5ae143ed55429920d5234360",
+    "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+    "gold": "1755",
+    "prediction": "1755",
+    "em": 1,
+    "n_steps": 3,
+    "n_react_calls": 3,
+    "n_verify_calls": 1,
+    "n_llm_calls": 4,
+    "n_revisions": 0,
+    "finished": true,
+    "prompt_tokens": 5578,
+    "completion_tokens": 388,
+    "layer_runs": {
+      "1": 3,
+      "2": 1
+    },
+    "verify_est_tokens": 441,
+    "trajectory": "Thought 1: I need to search Sergei Aleksandrovich Tokarev, find which university he is a professor at, then find its founding year.\nAction 1: Search[Sergei Aleksandrovich Tokarev]\nObservation 1: Sergei Aleksandrovich Tokarev (Russian: Серге́й Алекса́ндрович То́карев; 29 December 1899 – 19 April 1985) was a Russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at Moscow State University.\nThought 2: Sergei Aleksandrovich Tokarev is a professor at Moscow State University. I need to search Moscow State University next and find its founding year.\nAction 2: Search[Moscow State University]\nObservation 2: Moscow State University (MSU), officially M. V. Lomonosov Moscow State University, is a public research university in Moscow, Russia. The university includes 15 research institutes, 43 faculties, more than 300 departments, and six branches. Alumni of the university include past leaders of the Soviet Union and other governments.\nThought 3: Moscow State University was founded by Mikhail Lomonosov in 1755. So the answer is 1755.\nAction 3: Finish[1755]\nObservation 3: Episode finished. Answer: 1755"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "baseline": {
+    "path": "results/logs/baseline_n30_ollama.json",
+    "meta": {
+      "experiment": "baseline",
+      "tag": "baseline",
+      "backend": "ollama",
+      "model": "llama3.1",
+      "base_url": "",
+      "data": "data/hotpot_dev_fullwiki.json",
+      "n_requested": 30,
+      "n_scored": 30,
+      "seed": 42,
+      "max_steps": 8,
+      "layer1": false,
+      "exact_match": 0.23333333333333334,
+      "n_em": 7,
+      "layer1_violations": 0,
+      "elapsed_s": 439.7
+    },
+    "totals": {
+      "n": 30,
+      "em": 7,
+      "unfinished": 9,
+      "steps": 155,
+      "llm_calls": 157,
+      "react_calls": 157,
+      "verify_calls": 0,
+      "revisions": 0,
+      "tokens": 313162,
+      "verify_est_tokens": 0,
+      "layer_runs": {}
+    }
+  },
+  "adaptive": {
+    "path": "results/logs/adaptive_n30_ollama_steps12.json",
+    "meta": {
+      "experiment": "adaptive",
+      "tag": "adaptive[L1+L2+L3+L4]",
+      "backend": "ollama",
+      "model": "llama3.1",
+      "base_url": "",
+      "data": "data/hotpot_dev_fullwiki.json",
+      "n_requested": 30,
+      "n_scored": 30,
+      "seed": 42,
+      "max_steps": 12,
+      "budget": 5000,
+      "revise_bias": 1.0,
+      "use_layer3": true,
+      "use_layer4": true,
+      "exact_match": 0.3333333333333333,
+      "n_em": 10,
+      "elapsed_s": 1073.2,
+      "router": "AdaptiveThresholdRouter",
+      "cost_model": "DeclaredCostModel(error_weights={'base': 1.0, 'irreversibility': 2.0, 'stakes': 2.0, 'earliness': 1.0, 'scarcity': 1.0}, layer_costs={1: 0.0, 2: 120.0, 3: 300.0, 4: 800.0}, efficacy={1: 0.3, 2: 0.3, 3: 0.55, 4: 0.6}, revision_cost=1.0, revise_efficacy=0.5)",
+      "calibrator": "LayeredCalibrator({1: IdentityCalibrator(), 2: IdentityCalibrator(), 3: TemperatureScaling(T=1), 4: TemperatureScaling(T=1)})",
+      "calibration_config": null,
+      "cost_model_config": null,
+      "identity_calibration": true,
+      "routing_warnings": []
+    },
+    "totals": {
+      "n": 30,
+      "em": 10,
+      "unfinished": 13,
+      "steps": 226,
+      "llm_calls": 478,
+      "react_calls": 229,
+      "verify_calls": 249,
+      "revisions": 79,
+      "tokens": 608809,
+      "verify_est_tokens": 115962,
+      "layer_runs": {
+        "1": 226,
+        "2": 155,
+        "3": 98,
+        "4": 94
+      }
+    },
+    "traces": {
+      "n_decisions": 671,
+      "actions": {
+        "stop_pass": 147,
+        "call_layer_3": 297,
+        "call_layer_4": 148,
+        "stop_fail_revise": 79
+      },
+      "mean_tau": 0.9252861507837481,
+      "mean_tau_accept": 0.7079628147394871,
+      "mean_conf": 0.4945487690791108,
+      "mean_raw_conf": 0.49454876311785895,
+      "knife_edge": 223,
+      "max_calibration_shift": 1.0000000000000008e-06
+    }
+  },
+  "paired": {
+    "n": 30,
+    "wins": [
+      "5ab97d0a5542996be202051e",
+      "5ac3a76e554299741d48a2be",
+      "5a7b1023554299042af8f6c2"
+    ],
+    "losses": [],
+    "em_delta": 3,
+    "sign_test_p": 0.25
+  },
+  "pairing_problems": [],
+  "verdict": "no significant EM difference"
+}

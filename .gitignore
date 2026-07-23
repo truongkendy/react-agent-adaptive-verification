@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# secrets & local environment
+.env
+.venv/

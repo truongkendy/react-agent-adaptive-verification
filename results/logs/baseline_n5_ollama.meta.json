@@ -1,0 +1,17 @@
+{
+  "experiment": "baseline",
+  "tag": "baseline",
+  "backend": "ollama",
+  "model": "llama3.1",
+  "base_url": "",
+  "data": "data/hotpot_dev_fullwiki.json",
+  "n_requested": 5,
+  "n_scored": 5,
+  "seed": 42,
+  "max_steps": 8,
+  "layer1": false,
+  "exact_match": 0.6,
+  "n_em": 3,
+  "layer1_violations": 0,
+  "elapsed_s": 62.5
+}

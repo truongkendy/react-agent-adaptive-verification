@@ -1,0 +1,19 @@
+{
+  "experiment": "baseline",
+  "tag": "baseline",
+  "backend": "ollama",
+  "model": "llama3.1",
+  "base_url": "",
+  "data": "data/hotpotqa/hotpot_dev_distractor.json",
+  "n_requested": 5,
+  "n_scored": 5,
+  "seed": 42,
+  "max_steps": 8,
+  "layer1": false,
+  "retrieval": "distractor",
+  "exact_match": 0.6,
+  "n_em": 3,
+  "mean_f1": 0.7333333333333333,
+  "layer1_violations": 0,
+  "elapsed_s": 56.4
+}

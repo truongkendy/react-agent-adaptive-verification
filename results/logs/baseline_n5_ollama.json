@@ -1,0 +1,72 @@
+[
+  {
+    "id": "5ae143ed55429920d5234360",
+    "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+    "gold": "1755",
+    "prediction": "1755",
+    "em": 1,
+    "n_steps": 3,
+    "n_llm_calls": 3,
+    "finished": true,
+    "prompt_tokens": 5155,
+    "completion_tokens": 335,
+    "layer1_violations": 0,
+    "trajectory": "Thought 1: I need to search Sergei Aleksandrovich Tokarev, find which university he is a professor at, then find its founding year.\nAction 1: Search[Sergei Aleksandrovich Tokarev]\nObservation 1: Sergei Aleksandrovich Tokarev (Russian: Серге́й Алекса́ндрович То́карев; 29 December 1899 – 19 April 1985) was a Russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at Moscow State University.\nThought 2: Sergei Aleksandrovich Tokarev is a professor at Moscow State University. I need to search Moscow State University next and find its founding year.\nAction 2: Search[Moscow State University]\nObservation 2: Moscow State University (MSU), officially M. V. Lomonosov Moscow State University, is a public research university in Moscow, Russia. The university includes 15 research institutes, 43 faculties, more than 300 departments, and six branches. Alumni of the university include past leaders of the Soviet Union and other governments.\nThought 3: Moscow State University was founded by Mikhail Lomonosov in 1755. So the answer is 1755.\nAction 3: Finish[1755]\nObservation 3: Episode finished. Answer: 1755"
+  },
+  {
+    "id": "5abc19705542993a06baf86e",
+    "question": "Black Book starred the actress and writer of what heritage?",
+    "gold": "Dutch",
+    "prediction": "Dutch",
+    "em": 1,
+    "n_steps": 3,
+    "n_llm_calls": 3,
+    "finished": true,
+    "prompt_tokens": 5116,
+    "completion_tokens": 295,
+    "layer1_violations": 0,
+    "trajectory": "Thought 1: I need to search Black Book, find its actresses and writers, then find their heritage.\nAction 1: Search[Black Book]\nObservation 1: Could not find [Black Book]. Similar: ['Black Book (film)', 'Black Book', 'The Black Book of Communism', 'The Black Book (list)', 'Little Black Book (film)'].\nThought 2: To find the heritage, I can search Black Book (film).\nAction 2: Search[Black Book (film)]\nObservation 2: Black Book (Dutch: Zwartboek) is a 2006 war drama thriller film co-written and directed by Paul Verhoeven. The film, credited as based on several true events and characters, stars Carice van Houten as a young Jewish woman in the Netherlands who becomes a spy for the resistance during World War II after tragedy befalls her in an encounter with the Nazis. The cast also features Sebastian Koch, Thom Hoffman and Halina Reijn. A co-production of the Netherlands, Germany, Belgium, and the UK, it is the first film that Verhoeven made in his native Netherlands since The Fourth Man (1983). With a $21 million production budget, Black Book was the most expensive Dutch film ever made.\nThought 3: Carice van Houten is an actress of Dutch heritage. So the answer is Dutch.\nAction 3: Finish[Dutch]\nObservation 3: Episode finished. Answer: Dutch"
+  },
+  {
+    "id": "5ac3e0f7554299194317388b",
+    "question": "Which actor does American Beauty and American Beauty have in common?",
+    "gold": "Kevin Spacey",
+    "prediction": null,
+    "em": 0,
+    "n_steps": 8,
+    "n_llm_calls": 8,
+    "finished": false,
+    "prompt_tokens": 17232,
+    "completion_tokens": 366,
+    "layer1_violations": 0,
+    "trajectory": "Thought 1: I need to search American Beauty, find its actors, then find which one is also in American Beauty.\nAction 1: Search[American Beauty]\nObservation 1: Could not find [American Beauty]. Similar: ['American Beauty (1999 film)', 'American Beauty (album)', 'American Beauty/American Psycho', 'American Beauty', 'American Beauty (score)'].\nThought 2: To find the actor, I can search American Beauty (1999 film).\nAction 2: Search[American Beauty (1999 film)]\nObservation 2: American Beauty is a 1999 American black comedy and psychological drama film directed by Sam Mendes in his feature directorial debut, and written by Alan Ball. Kevin Spacey stars as Lester Burnham, an advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, played by Mena Suvari. Annette Bening stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane. Wes Bentley, Chris Cooper, Peter Gallagher, and Allison Janney co-star. Academics have described the film as satirizing how beauty and personal satisfaction are perceived by the American middle class; further analysis has focused on the film's explorations of romantic and paternal love, sexuality, materialism, and self-liberation.\nThought 3: The actors in American Beauty (1999 film) are Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley, Chris Cooper, Peter Gallagher, and Allison Janney. I need to search the other American Beauty next.\nAction 3: Search[American Beauty (album)]\nObservation 3: American Beauty is the fifth studio album (and sixth overall) by American rock band the Grateful Dead. Released in November 1970, by Warner Bros. Records, the album continued the folk rock and country music style of their previous album Workingman's Dead, released earlier in the year. Upon release, American Beauty entered the Billboard 200 chart, ultimately peaking at number 30 during a nineteen-week stay in January 1971. On July 11, 1974, the album was certified Gold by the Recording Industry Association of America (RIAA), and it later achieved Platinum and double Platinum certification in 1986 and 2001, respectively.\nThought 4: The actors in American Beauty (album) are not mentioned. So I need to search American Beauty/American Psycho next.\nAction 4: Search[American Beauty/American Psycho]\nObservation 4: American Beauty/American Psycho (sometimes abbreviated as AB/AP) is the sixth studio album by American rock band Fall Out Boy, released on January 16, 2015  through Island Records as the follow-up to the band's comeback album Save Rock and Roll (2013). The band wrote music while on tour with Paramore mid-2014 and it developed into a new album. The album's release was preceded by the 8× Platinum top 10 lead single \"Centuries\", released September 9, 2014 while the album was still being completed. The album's title track was released as the second single in the UK on December 15, 2014, receiving a radio premiere a month before on November 24, 2014. American Beauty/American Psycho debuted at No.\nThought 5: The actors in American Beauty/American Psycho are not mentioned. So I need to search American Beauty (score) next.\nAction 5: Search[American Beauty (score)]\nObservation 5: American Beauty: Original Motion Picture Score is the recording of the original score for the 1999 film, composed and conducted by Thomas Newman. The original music accompanied 11 songs by other artists.\nThought 6: The actors in American Beauty (score) are not mentioned. So I need to search American Beauty (1999 film) again.\nAction 6: Search[American Beauty (1999 film)]\nObservation 6: American Beauty is a 1999 American black comedy and psychological drama film directed by Sam Mendes in his feature directorial debut, and written by Alan Ball. Kevin Spacey stars as Lester Burnham, an advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, played by Mena Suvari. Annette Bening stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane. Wes Bentley, Chris Cooper, Peter Gallagher, and Allison Janney co-star. Academics have described the film as satirizing how beauty and personal satisfaction are perceived by the American middle class; further analysis has focused on the film's explorations of romantic and paternal love, sexuality, materialism, and self-liberation.\nThought 7: The actors in American Beauty (1999 film) are Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley, Chris Cooper, Peter Gallagher, and Allison Janney. I need to search the other American Beauty again.\nAction 7: Search[American Beauty/American Psycho]\nObservation 7: American Beauty/American Psycho (sometimes abbreviated as AB/AP) is the sixth studio album by American rock band Fall Out Boy, released on January 16, 2015  through Island Records as the follow-up to the band's comeback album Save Rock and Roll (2013). The band wrote music while on tour with Paramore mid-2014 and it developed into a new album. The album's release was preceded by the 8× Platinum top 10 lead single \"Centuries\", released September 9, 2014 while the album was still being completed. The album's title track was released as the second single in the UK on December 15, 2014, receiving a radio premiere a month before on November 24, 2014. American Beauty/American Psycho debuted at No.\nThought 8: The actors in American Beauty/American Psycho are not mentioned. So I need to search American Beauty (1999 film) again.\nAction 8: Search[American Beauty (1999 film)]\nObservation 8: American Beauty is a 1999 American black comedy and psychological drama film directed by Sam Mendes in his feature directorial debut, and written by Alan Ball. Kevin Spacey stars as Lester Burnham, an advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, played by Mena Suvari. Annette Bening stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane. Wes Bentley, Chris Cooper, Peter Gallagher, and Allison Janney co-star. Academics have described the film as satirizing how beauty and personal satisfaction are perceived by the American middle class; further analysis has focused on the film's explorations of romantic and paternal love, sexuality, materialism, and self-liberation."
+  },
+  {
+    "id": "5ae518655542993aec5ec139",
+    "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+    "gold": "40 members",
+    "prediction": "40",
+    "em": 0,
+    "n_steps": 3,
+    "n_llm_calls": 3,
+    "finished": true,
+    "prompt_tokens": 5282,
+    "completion_tokens": 323,
+    "layer1_violations": 0,
+    "trajectory": "Thought 1: I need to search Ken Pruitt, find which legislature he is in, then find its number of members.\nAction 1: Search[Ken Pruitt]\nObservation 1: Ken Pruitt (born January 24, 1957) is an American politician who served as a member of the Florida Senate. A Republican, he represented the 27th district and the 28th District from 2000 to 2009, which included portions of Indian River, Martin, Okeechobee, Palm Beach and St. Lucie Counties. He was previously a member of the Florida House of Representatives from 1990 through 2000. On November 21, 2006, Ken Pruitt was chosen by the unanimous vote of his colleagues to serve a two-year term as President of the Florida Senate.\nThought 2: Ken Pruitt is a Republican member of the Florida Senate and previously a member of the Florida House of Representatives. I need to search Florida Senate next.\nAction 2: Search[Florida Senate]\nObservation 2: The Florida Senate is the upper house of the Florida Legislature, the state legislature of the U.S. state of Florida, the Florida House of Representatives being the lower house. Article III, Section 1 of the Constitution of Florida, adopted in 1968, defines the role of the Legislature and how it is to be constituted. The Senate is composed of 40 members, each elected from a single-member district with a population of approximately 540,000 residents. The Senate Chamber is located in the State Capitol building.\nThought 3: The Florida Senate has 40 members. So Ken Pruitt was a Republican member of an upper house of the legislature with 40 members.\nAction 3: Finish[40]\nObservation 3: Episode finished. Answer: 40"
+  },
+  {
+    "id": "5ab985eb554299131ca42360",
+    "question": "Between Greyia and Calibanus, which genus contains more species?",
+    "gold": "Greyia",
+    "prediction": "Greyia",
+    "em": 1,
+    "n_steps": 3,
+    "n_llm_calls": 3,
+    "finished": true,
+    "prompt_tokens": 5181,
+    "completion_tokens": 319,
+    "layer1_violations": 0,
+    "trajectory": "Thought 1: I need to search Greyia and Calibanus, find how many species each genus has, then compare them.\nAction 1: Search[Greyia]\nObservation 1: Greyia is a genus of plant in family Francoaceae. It contains three species native to South Africa, Eswatini, and Lesotho: Greyia flanaganii Bolus. Greyia radlkoferi Szyszył. Greyia sutherlandii Hook.\nThought 2: Greyia has 3 species. I need to search Calibanus next and find how many species it has.\nAction 2: Search[Calibanus]\nObservation 2: Calibanus was a genus of two species of flowering plants, both evergreen succulents from dry areas of northeastern Mexico.The genus was subsumed in the genus Beaucarnea in the year 2014. The APG III classification system places Beaucarnea in the family Asparagaceae, subfamily Convallarioideae (formerly the family Ruscaceae.) The now-defunct Calibanus was formerly included in the Agavaceae (now Agavoideae) but was separated from them, for it is polycarpic and dioecious. Its name refers to the monster Caliban, an antagonist in Shakespeare's The Tempest. Calibanus is dioecious. It is extremely drought-tolerant, with a slow-growing habit.\nThought 3: Calibanus has 2 species. So Greyia (3) > Calibanus (2), so Greyia contains more species.\nAction 3: Finish[Greyia]\nObservation 3: Episode finished. Answer: Greyia"
+  }
+]

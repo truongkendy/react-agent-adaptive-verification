@@ -1,0 +1,917 @@
+[
+  {
+    "id": "5ae143ed55429920d5234360",
+    "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+    "gold": "1755",
+    "prediction": "1755",
+    "em": 1,
+    "f1": 1.0,
+    "n_steps": 3,
+    "n_react_calls": 3,
+    "n_verify_calls": 3,
+    "n_llm_calls": 6,
+    "n_revisions": 0,
+    "finished": true,
+    "prompt_tokens": 6377,
+    "completion_tokens": 918,
+    "layer_runs": {
+      "1": 3,
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "layer_parse_fail": {},
+    "layer_parse_total": {
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "verify_est_tokens": 1669,
+    "trajectory": "Thought 1: I need to search Sergei Aleksandrovich Tokarev, find the university he was a professor at, then find its founding year.\nAction 1: Search[Sergei Aleksandrovich Tokarev]\nObservation 1: Sergei Aleksandrovich Tokarev (Russian: Серге́й Алекса́ндрович То́карев , 29 December 1899 – 19 April 1985) was a Russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at Moscow State University.\nThought 2: Sergei Aleksandrovich Tokarev was a professor at Moscow State University. I need to search Moscow State University next and find its founding year.\nAction 2: Search[Moscow State University]\nObservation 2: Lomonosov Moscow State University (MSU; Russian: Московский государственный университет имени М. В. Ломоносова , often abbreviated МГУ) is a coeducational and public research university located in Moscow, Russia. It was founded on January 25, 1755 by Mikhail Lomonosov. MSU was renamed after Lomonosov in 1940 and was then known as \"Lomonosov University\".\nThought 3: Moscow State University was founded in 1755. So the answer is 1755.\nAction 3: Finish[1755]\nObservation 3: Episode finished. Answer: 1755",
+    "decision_traces": [
+      {
+        "layer_id": 1,
+        "tau": 0.6923195261720703,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.675,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8931909212283045,
+        "raw_confidence": 0.9,
+        "step_index": 1,
+        "steps_remaining": 7,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.8679606522743778,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.55,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.869281045751634,
+        "raw_confidence": 0.9,
+        "step_index": 2,
+        "steps_remaining": 6,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.9329949578705797,
+        "calibrated_confidence": 0.9,
+        "error_cost": 5.025,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.9203980099502488,
+        "raw_confidence": 0.9,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.9129814613986479,
+        "calibrated_confidence": 1.0,
+        "error_cost": 5.294135802469136,
+        "budget_remaining": 1184,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9244447035503993,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.0,
+        "calibrated_confidence": 1.0,
+        "error_cost": 6.055246913580247,
+        "budget_remaining": -49,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9339415872368623,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      }
+    ],
+    "layer_signals": [
+      {
+        "step_index": 1,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 2,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 5,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 4,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      }
+    ]
+  },
+  {
+    "id": "5abc19705542993a06baf86e",
+    "question": "Black Book starred the actress and writer of what heritage?",
+    "gold": "Dutch",
+    "prediction": "Dutch",
+    "em": 1,
+    "f1": 1.0,
+    "n_steps": 3,
+    "n_react_calls": 3,
+    "n_verify_calls": 3,
+    "n_llm_calls": 6,
+    "n_revisions": 0,
+    "finished": true,
+    "prompt_tokens": 6484,
+    "completion_tokens": 897,
+    "layer_runs": {
+      "1": 3,
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "layer_parse_fail": {},
+    "layer_parse_total": {
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "verify_est_tokens": 1808,
+    "trajectory": "Thought 1: I need to search Black Book and find the actress and writer, then find their heritage.\nAction 1: Search[Black Book]\nObservation 1: Could not find Black Book. Similar: ['Black Book of the Admiralty', 'Black Book (World War II)', 'Black Book (novel)', 'Black Book (non-standard disc format)', 'Black Book (film)'].\nThought 2: To find the answer, I can search Black Book (film).\nAction 2: Search[Black Book (film)]\nObservation 2: Black Book (Dutch: Zwartboek ) is a 2006 Dutch thriller film co-written and directed by Paul Verhoeven and starring Carice van Houten, Sebastian Koch, Thom Hoffman, and Halina Reijn. The film, credited as based on several true events and characters, is about a young Jewish woman in the Netherlands who becomes a spy for the resistance during World War II after tragedy befalls her in an encounter with the Nazis. The film had its world premiere on 1 September 2006 at the Venice Film Festival and its public release on 14 September 2006 in the Netherlands. It is the first film that Verhoeven made in the Netherlands since \"The Fourth Man,\" made in 1983 before he moved to the United States.\nThought 3: Black Book (film) starred Carice van Houten, who is Dutch. So the answer is Dutch.\nAction 3: Finish[Dutch]\nObservation 3: Episode finished. Answer: Dutch",
+    "decision_traces": [
+      {
+        "layer_id": 1,
+        "tau": 0.6923195261720703,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.675,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8931909212283045,
+        "raw_confidence": 0.9,
+        "step_index": 1,
+        "steps_remaining": 7,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.6772371500040345,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.55,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.869281045751634,
+        "raw_confidence": 0.9,
+        "step_index": 2,
+        "steps_remaining": 6,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.9329949578705797,
+        "calibrated_confidence": 0.9,
+        "error_cost": 5.025,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.9203980099502488,
+        "raw_confidence": 0.9,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.9075382363637734,
+        "calibrated_confidence": 1.0,
+        "error_cost": 5.343518518518519,
+        "budget_remaining": 1104,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9251429561601109,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.0,
+        "calibrated_confidence": 1.0,
+        "error_cost": 6.14104938271605,
+        "budget_remaining": -188,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9348645524450923,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "reasoning",
+        "parse_ok": true
+      }
+    ],
+    "layer_signals": [
+      {
+        "step_index": 1,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 2,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 5,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 4,
+        "verdict": "fail",
+        "raw_confidence": 0.19999999999999996,
+        "parse_ok": true
+      }
+    ]
+  },
+  {
+    "id": "5ac3e0f7554299194317388b",
+    "question": "Which actor does American Beauty and American Beauty have in common?",
+    "gold": "Kevin Spacey",
+    "prediction": "none",
+    "em": 0,
+    "f1": 0.0,
+    "n_steps": 8,
+    "n_react_calls": 8,
+    "n_verify_calls": 4,
+    "n_llm_calls": 12,
+    "n_revisions": 2,
+    "finished": true,
+    "prompt_tokens": 18233,
+    "completion_tokens": 1386,
+    "layer_runs": {
+      "1": 8,
+      "2": 2,
+      "5": 2,
+      "4": 2
+    },
+    "layer_parse_fail": {},
+    "layer_parse_total": {
+      "2": 2,
+      "4": 2
+    },
+    "verify_est_tokens": 1973,
+    "trajectory": "Thought 1: I need to search American Beauty and find its actors, then find the actor it has in common with American Beauty.\nAction 1: Search[American Beauty]\nObservation 1: Could not find American Beauty. Similar: ['American Beauty (1927 film)', 'Miss American Beauty 1963', 'List of accolades received by American Beauty', 'American Beauty/American Psycho Tour', 'American Beauty (1999 film)'].\nThought 2: To find the actor, I can search American Beauty (1999 film).\nAction 2: Search[American Beauty (1999 film)]\nObservation 2: American Beauty is a 1999 American drama film directed by Sam Mendes and written by Alan Ball. Kevin Spacey stars as Lester Burnham, a 42-year-old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, Angela (Mena Suvari). Annette Bening co-stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane. Wes Bentley, Chris Cooper, and Allison Janney also feature. The film is described by academics as a satire of American middle-class notions of beauty and personal satisfaction; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self-liberation, and redemption.\nThought 3: American Beauty (1999 film) has actors Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley, Chris Cooper, and Allison Janney. I need to search American Beauty (1927 film) next and find its actors.\nAction 3: Search[American Beauty (1927 film)]\nObservation 3: American Beauty is a lost 1927 American silent film romantic drama produced and distributed by First National Pictures. This film was directed by Richard Wallace and starred Billie Dove. It was based on a short story \"American Beauty\" by Wallace Irwin. She is supported by Walter McGrail and Margaret Livingston.\nThought 4: American Beauty (1927 film) has actors Billie Dove, Walter McGrail, and Margaret Livingston. So the actor American Beauty (1999 film) and American Beauty (1927 film) have in common is none.\nAction 4: Finish[none]\nObservation 4: [Verify:answer] You are about to answer that you do not know, which scores zero. The question is \"Which actor does American Beauty and American Beauty have in common?\". Do not finish — find the fact first: Search[<an entity named in the question>], then Lookup[<the attribute the question asks for>] inside that page.\nThought 5: I need to search American Beauty (1999 film) and find its actors, then search American Beauty (1927 film) and find its actors, then find the actor they have in common.\nAction 5: Search[American Beauty (1999 film)]\nObservation 5: [Verify:format] 'Search[American Beauty (1999 film)]' duplicates an action already run (ignoring case and whitespace differences). Try a different search direction.\nThought 6: I need to search American Beauty (1927 film) and find its actors, then search American Beauty (1999 film) and find its actors, then find the actor they have in common.\nAction 6: Search[American Beauty (1927 film)]\nObservation 6: American Beauty is a lost 1927 American silent film romantic drama produced and distributed by First National Pictures. This film was directed by Richard Wallace and starred Billie Dove. It was based on a short story \"American Beauty\" by Wallace Irwin. She is supported by Walter McGrail and Margaret Livingston.\nThought 7: American Beauty (1927 film) has actors Billie Dove, Walter McGrail, and Margaret Livingston. I need to search American Beauty (1999 film) next and find its actors.\nAction 7: Search[American Beauty (1999 film)]\nObservation 7: American Beauty is a 1999 American drama film directed by Sam Mendes and written by Alan Ball. Kevin Spacey stars as Lester Burnham, a 42-year-old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, Angela (Mena Suvari). Annette Bening co-stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane. Wes Bentley, Chris Cooper, and Allison Janney also feature. The film is described by academics as a satire of American middle-class notions of beauty and personal satisfaction; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self-liberation, and redemption.\nThought 8: American Beauty (1999 film) has actors Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley, Chris Cooper, and Allison Janney. So the actor American Beauty (1999 film) and American Beauty (1927 film) have in common is none.\nAction 8: Finish[none]\nObservation 8: Episode finished. Answer: none",
+    "decision_traces": [
+      {
+        "layer_id": 1,
+        "tau": 0.6923195261720703,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.675,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8931909212283045,
+        "raw_confidence": 0.9,
+        "step_index": 1,
+        "steps_remaining": 7,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.6772371500040345,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.55,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.869281045751634,
+        "raw_confidence": 0.9,
+        "step_index": 2,
+        "steps_remaining": 6,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.861154500329758,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.425,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8350515463917525,
+        "raw_confidence": 0.9,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.9312856455713598,
+        "calibrated_confidence": 0.9,
+        "error_cost": 4.9,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.8979591836734694,
+        "raw_confidence": 0.9,
+        "step_index": 4,
+        "steps_remaining": 4,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.9099612833518413,
+        "calibrated_confidence": 1.0,
+        "error_cost": 5.177777777777778,
+        "budget_remaining": 1170,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9034334763948498,
+        "raw_confidence": 1.0,
+        "step_index": 4,
+        "steps_remaining": 4,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.862364874201849,
+        "calibrated_confidence": 0.02,
+        "error_cost": 5.451234567901235,
+        "budget_remaining": 727,
+        "action": "stop_fail_revise",
+        "target_layer": null,
+        "tau_accept": 0.9082776582493489,
+        "raw_confidence": 0.02,
+        "step_index": 4,
+        "steps_remaining": 4,
+        "suspected_error_type": "answer",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.6215883827633508,
+        "calibrated_confidence": 0.03,
+        "error_cost": 2.175,
+        "budget_remaining": 1620,
+        "action": "stop_fail_revise",
+        "target_layer": null,
+        "tau_accept": 0.3869731800766283,
+        "raw_confidence": 0.03,
+        "step_index": 5,
+        "steps_remaining": 3,
+        "suspected_error_type": "format",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.5985145036635551,
+        "calibrated_confidence": 0.03,
+        "error_cost": 2.05,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.0,
+        "raw_confidence": 0.03,
+        "step_index": 6,
+        "steps_remaining": 2,
+        "suspected_error_type": "format",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.8250907341816434,
+        "calibrated_confidence": 0.03,
+        "error_cost": 1.925,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.0,
+        "raw_confidence": 0.03,
+        "step_index": 7,
+        "steps_remaining": 1,
+        "suspected_error_type": "format",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.923477196204469,
+        "calibrated_confidence": 0.9,
+        "error_cost": 4.4,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.0,
+        "raw_confidence": 0.9,
+        "step_index": 8,
+        "steps_remaining": 1,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.8914805063318613,
+        "calibrated_confidence": 1.0,
+        "error_cost": 4.746296296296297,
+        "budget_remaining": 1059,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.0,
+        "raw_confidence": 1.0,
+        "step_index": 8,
+        "steps_remaining": 1,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.8006379585326954,
+        "calibrated_confidence": 0.02,
+        "error_cost": 5.066666666666667,
+        "budget_remaining": 540,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.0,
+        "raw_confidence": 0.02,
+        "step_index": 8,
+        "steps_remaining": 1,
+        "suspected_error_type": "answer",
+        "parse_ok": null
+      }
+    ],
+    "layer_signals": [
+      {
+        "step_index": 1,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 2,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 4,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 4,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 4,
+        "layer_id": 5,
+        "verdict": "fail",
+        "raw_confidence": 0.02,
+        "parse_ok": null
+      },
+      {
+        "step_index": 4,
+        "layer_id": 4,
+        "verdict": "fail",
+        "raw_confidence": 0.19999999999999996,
+        "parse_ok": true
+      },
+      {
+        "step_index": 5,
+        "layer_id": 1,
+        "verdict": "fail",
+        "raw_confidence": 0.03,
+        "parse_ok": null
+      },
+      {
+        "step_index": 6,
+        "layer_id": 1,
+        "verdict": "fail",
+        "raw_confidence": 0.03,
+        "parse_ok": null
+      },
+      {
+        "step_index": 7,
+        "layer_id": 1,
+        "verdict": "fail",
+        "raw_confidence": 0.03,
+        "parse_ok": null
+      },
+      {
+        "step_index": 8,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 8,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 8,
+        "layer_id": 5,
+        "verdict": "fail",
+        "raw_confidence": 0.02,
+        "parse_ok": null
+      },
+      {
+        "step_index": 8,
+        "layer_id": 4,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      }
+    ]
+  },
+  {
+    "id": "5ae518655542993aec5ec139",
+    "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+    "gold": "40 members",
+    "prediction": "40",
+    "em": 0,
+    "f1": 0.6666666666666666,
+    "n_steps": 3,
+    "n_react_calls": 3,
+    "n_verify_calls": 3,
+    "n_llm_calls": 6,
+    "n_revisions": 0,
+    "finished": true,
+    "prompt_tokens": 6293,
+    "completion_tokens": 906,
+    "layer_runs": {
+      "1": 3,
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "layer_parse_fail": {},
+    "layer_parse_total": {
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "verify_est_tokens": 1636,
+    "trajectory": "Thought 1: I need to search Ken Pruitt, find the legislature he was a member of, then find the number of members in the upper house of the legislature.\nAction 1: Search[Ken Pruitt]\nObservation 1: Ken Pruitt (born January 24, 1957) was a Republican member of the Florida Senate, representing the 28th District from 2000 to 2009. His district includes portions of Indian River, Martin, Okeechobee, Palm Beach and St. Lucie Counties. He was previously a member of the Florida House of Representatives from 1990 through 2000.\nThought 2: Ken Pruitt was a member of the Florida Senate. I need to search Florida Senate next and find the number of members in the upper house.\nAction 2: Search[Florida Senate]\nObservation 2: The Florida Senate is the upper house of the legislature of the U.S. state of Florida. Along with the House of Representatives, it composes the Florida Legislature. The Senate has 40 members, each elected from a single-member district with a population of about 470,000. The Senate meets at the State Capitol in Tallahassee.\nThought 3: The Florida Senate has 40 members. So the answer is 40.\nAction 3: Finish[40]\nObservation 3: Episode finished. Answer: 40",
+    "decision_traces": [
+      {
+        "layer_id": 1,
+        "tau": 0.6923195261720703,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.675,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8931909212283045,
+        "raw_confidence": 0.9,
+        "step_index": 1,
+        "steps_remaining": 7,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.8679606522743778,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.55,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.869281045751634,
+        "raw_confidence": 0.9,
+        "step_index": 2,
+        "steps_remaining": 6,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.9329949578705797,
+        "calibrated_confidence": 0.9,
+        "error_cost": 5.025,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.9203980099502488,
+        "raw_confidence": 0.9,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.9136095305965846,
+        "calibrated_confidence": 1.0,
+        "error_cost": 5.287962962962963,
+        "budget_remaining": 1194,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9243565049903695,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.0,
+        "calibrated_confidence": 1.0,
+        "error_cost": 6.034876543209877,
+        "budget_remaining": -16,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9337186109548407,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      }
+    ],
+    "layer_signals": [
+      {
+        "step_index": 1,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 2,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 5,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 4,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      }
+    ]
+  },
+  {
+    "id": "5ab985eb554299131ca42360",
+    "question": "Between Greyia and Calibanus, which genus contains more species?",
+    "gold": "Greyia",
+    "prediction": "Greyia",
+    "em": 1,
+    "f1": 1.0,
+    "n_steps": 3,
+    "n_react_calls": 3,
+    "n_verify_calls": 3,
+    "n_llm_calls": 6,
+    "n_revisions": 0,
+    "finished": true,
+    "prompt_tokens": 6262,
+    "completion_tokens": 923,
+    "layer_runs": {
+      "1": 3,
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "layer_parse_fail": {},
+    "layer_parse_total": {
+      "2": 1,
+      "5": 1,
+      "4": 1
+    },
+    "verify_est_tokens": 1679,
+    "trajectory": "Thought 1: I need to search Greyia and Calibanus, find the number of species in each genus, then compare them.\nAction 1: Search[Greyia]\nObservation 1: Greyia is a genus of plant in family Melianthaceae. It contains three species:\nThought 2: Greyia contains 3 species. I need to search Calibanus next and find the number of species.\nAction 2: Search[Calibanus]\nObservation 2: Calibanus is a genus of two species of flowering plants, both evergreen succulents from dry areas of northeastern Mexico. The APG III classification system places it in the family Asparagaceae, subfamily Nolinoideae (formerly the family Ruscaceae. ) It was formerly included in the Agavaceae (now Agavoideae) but is now separated from them, for it is polycarpic and dioecious. Its name refers to the monster Caliban, an antagonist in Shakespeare's \"The Tempest\".\nThought 3: Calibanus contains 2 species. 2 (Calibanus) < 3 (Greyia), so Greyia contains more species.\nAction 3: Finish[Greyia]\nObservation 3: Episode finished. Answer: Greyia",
+    "decision_traces": [
+      {
+        "layer_id": 1,
+        "tau": 0.6923195261720703,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.675,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.8931909212283045,
+        "raw_confidence": 0.9,
+        "step_index": 1,
+        "steps_remaining": 7,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.8679606522743778,
+        "calibrated_confidence": 0.9,
+        "error_cost": 2.55,
+        "budget_remaining": 1620,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.869281045751634,
+        "raw_confidence": 0.9,
+        "step_index": 2,
+        "steps_remaining": 6,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 1,
+        "tau": 0.9329949578705797,
+        "calibrated_confidence": 0.9,
+        "error_cost": 5.025,
+        "budget_remaining": 1620,
+        "action": "call_layer_3",
+        "target_layer": 3,
+        "tau_accept": 0.9203980099502488,
+        "raw_confidence": 0.9,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": null
+      },
+      {
+        "layer_id": 2,
+        "tau": 0.9112965852059952,
+        "calibrated_confidence": 1.0,
+        "error_cost": 5.310185185185185,
+        "budget_remaining": 1158,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9246730601569311,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "none",
+        "parse_ok": true
+      },
+      {
+        "layer_id": 5,
+        "tau": 0.0,
+        "calibrated_confidence": 1.0,
+        "error_cost": 6.06141975308642,
+        "budget_remaining": -59,
+        "action": "stop_pass",
+        "target_layer": null,
+        "tau_accept": 0.9340088599215846,
+        "raw_confidence": 1.0,
+        "step_index": 3,
+        "steps_remaining": 5,
+        "suspected_error_type": "reasoning",
+        "parse_ok": true
+      }
+    ],
+    "layer_signals": [
+      {
+        "step_index": 1,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 2,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 1,
+        "verdict": "pass",
+        "raw_confidence": 0.9,
+        "parse_ok": null
+      },
+      {
+        "step_index": 3,
+        "layer_id": 2,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 5,
+        "verdict": "pass",
+        "raw_confidence": 1.0,
+        "parse_ok": true
+      },
+      {
+        "step_index": 3,
+        "layer_id": 4,
+        "verdict": "fail",
+        "raw_confidence": 0.09999999999999998,
+        "parse_ok": true
+      }
+    ]
+  }
+]
